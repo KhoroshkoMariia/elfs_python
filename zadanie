@@ -1,0 +1,46 @@
+#### Zadanie świąteczne
+1. Utwórz klasę: `Elf` z atrybutami
+* `id`
+* `name`
+* `level`
+
+2. Utwórz klasę: `Gift` z atrybutami
+* `name`
+* `difficulty`
+
+3. Utwórz zmienną globalną `Integer christmasCoin`
+
+4. Utwórz Menu
+```
+1. Dodaj Elfa
+2. Wyświetl Elfy
+3. Ulepsz elfa
+4. Wyprodukuj prezent
+5. Lista wytworzonych prezentów
+```
+
+##### Dodawanie Elfa
+Podczas dodawania elfa użytkownik zostanie zapytany o imie elfa.
+Domyślnie elf tworzy się z poziomem `1`, id jest generowane (uuid).
+
+##### Wyświetlanie Eflów
+Wyświetla wszystkie elfy wraz z ich wszystkimi cechami
+
+##### Ulepszanie Elfa
+Ta opcja umożliwia ulepszenie elfa o 1 poziom.
+Ulepszenie kosztuje
+```
+1 - 4 lvl   10 ChristmasCoinów
+5 - 10 lvl  15 ChristmasCoinów
+```
+
+##### Wyprodukuj prezent
+Użytkownik zostanie poproszony o nazwe prezentu, poziom trudności wytworzenia przedmiotu.
+Jeśli poziom trudności wytworzenia prezentu jest większa niż suma leveli elfów, to wtedy
+prezent nie zostanie utworzony.
+Jeśli jednak elfy poziadają większą sume leveli, to prezent zostanie utworzony i
+przybędzie `gift dificulty * 3` ChristmasCoinów.
+
+##### Lista wyprodukowanych prezentów
+Zwróci liste wyprodukowanych prezentów
+
